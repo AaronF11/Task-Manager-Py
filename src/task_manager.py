@@ -30,6 +30,9 @@ class TaskManager:
         """
         if 0 < index <= len(self.tasks):
             self.tasks[index - 1].mark_as_completed()
+            print("Task marked as completed!")
+        else:
+            print("Invalid task number. Please try again.")
 
     def remove_task(self, index):
         """
